@@ -1,20 +1,11 @@
 import React from 'react';
 import './App.css';
+import Navbar from './Navbar';
 
 function App() {
   return (
     <div class="container-fluid">
-      <nav class="nav justify-content-end">
-        <span class="navbar-text">Livraison standard gratuite pour toute commande supérieure à 90€</span>
-        <span class="navbar-text">|</span>
-        <a class="nav-link" href="https://twitter.com/?lang=fr">Trouver un point de vente</a>
-        <span class="navbar-text">|</span>
-        <a class="nav-link" href="https://twitter.com/?lang=fr">Suivi de commande</a>
-        <span class="navbar-text">|</span>
-        <a class="nav-link" href="https://twitter.com/?lang=fr">S'identifier</a>
-        <span class="navbar-text">|</span>
-        <a class="nav-link" href="https://twitter.com/?lang=fr"><img src="public/logo-1.png" width="30" height="30" alt=""/>Mon panier</a>
-      </nav>
+      <Navbar />
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

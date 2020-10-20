@@ -1,44 +1,41 @@
 function aireRectangle(longueur, largeur) {
-    return (longueur * largeur)
+    return longueur * largeur
 }
 
 function perimetreRectangle(longueur, largeur) {
-    return ((longueur * 2) + (largeur * 2))
+    return longueur * 2 + largeur * 2
 }
 
 function aireTriangleRectangle(base, hauteur) {
-    return ((base * hauteur) / 2)
+    return base * hauteur / 2
 }
 
 function perimetreTriangleRectangle(base, hauteur) {
-    return (base + hauteur + (Math.hypot(base, hauteur)))
+    return base + hauteur + (Math.hypot(base, hauteur))
 }
 
 function kelvinsToCelsius(kelvins) {
-    return (kelvins - 273.15)
+    return kelvins - 273.15
 }
 
 function perimetreCercle(rayon) {
-    return (2 * Math.PI * rayon)
+    return 2 * Math.PI * rayon
 }
 
 function aireCercle(rayon) {
-    return (Math.PI * (rayon ** 2))
+    return Math.PI * rayon ** 2
 }
 
 function rendreMonnaie(price, billAmount) {
-    return (billAmount - price)
+    return billAmount - price
 }
 
 function vacances(prix, budget) {
-    const a = budget % prix
-    const b = budget - a
-    const c = b / prix
-    return `Je peux partir ${c} jours et il me reste ${a} euros`
+    return `Je peux partir ${(budget - (budget % prix)) / prix} jours et il me reste ${budget % prix} euros`
 }
 
 function entier(nombre) {
-    return ((nombre % 2) === 0)
+    return (nombre % 2) === 0
 }
 
 function retirerPremiereLettre(mot) {
@@ -48,12 +45,6 @@ function retirerPremiereLettre(mot) {
 function retirerDerniereLettre(mot) {
     return mot.slice(0, -1)
 }
-
-// function pair(nombre) {
-//     return ((nombre % 2) === 0)
-// }
-
-
 
 console.log(aireRectangle(12, 5));
 console.log(perimetreRectangle(6, 8));

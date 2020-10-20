@@ -10,8 +10,8 @@ function aireTriangleRectangle(base, hauteur) {
     return ((base * hauteur) / 2)
 }
 
-function perimetreTriangleRectangle(base, hauteur, hypotenuse) {
-    return (base + hauteur + hypotenuse)
+function perimetreTriangleRectangle(base, hauteur) {
+    return (base + hauteur + (Math.hypot(base, hauteur)))
 }
 
 function kelvinsToCelsius(kelvins) {
@@ -58,7 +58,7 @@ function retirerDerniereLettre(mot) {
 console.log(aireRectangle(12, 5));
 console.log(perimetreRectangle(6, 8));
 console.log(aireTriangleRectangle(15, 13));
-console.log(perimetreTriangleRectangle(7, 4, 9));
+console.log(perimetreTriangleRectangle(20, 18));
 console.log(kelvinsToCelsius(50));
 console.log(perimetreCercle(18));
 console.log(aireCercle(14));

@@ -46,6 +46,16 @@ function retirerDerniereLettre(mot) {
     return mot.slice(0, -1)
 }
 
+function essence(distance, reservoir, consommation) {
+    const a = distance * consommation
+    const b = a / reservoir
+    if (b < 1) {
+        return "Un plein d'essence suffit"
+    } else {
+        return `Il faut faire ${b-1} pleins d'essences en plus`
+    }
+}
+
 console.log(aireRectangle(12, 5));
 console.log(perimetreRectangle(6, 8));
 console.log(aireTriangleRectangle(15, 13));
@@ -58,4 +68,4 @@ console.log(vacances(120, 550));
 console.log(entier(218));
 console.log(retirerPremiereLettre("Hello"));
 console.log(retirerDerniereLettre("Hello"));
-
+console.log(essence(100, 50, 5));
